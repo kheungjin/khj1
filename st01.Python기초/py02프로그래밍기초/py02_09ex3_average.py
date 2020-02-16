@@ -1,15 +1,15 @@
-value1 = input("ì²«ë²ˆì§¸ ê³¼ëª© ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” ")
-value2 = input("ë‘ë²ˆì§¸ ê³¼ëª© ì ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” ")
+value1 = input("Ã¹¹øÂ° °ú¸ñ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>> ")
+value2 = input("µÎ¹øÂ° °ú¸ñ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>> ")
 
-value1 = int(value1)
-value2 = int(value2)
-
+value1 = int(value1)  # ¹®ÀÚ¿­À» ¼ýÀÚ·Î º¯È¯. Çüº¯È¯
+value2 = int(value2)  # ¹®ÀÚ¿­À» ¼ýÀÚ·Î º¯È¯. Çüº¯È¯
 sum = value1 + value2
 average = sum / 2
 
-print("---------------------------")
+print("--------------------")
 if average >= 95:
     print("very Good")
 else:
     print("just Good")
-print("---------------------------")
+
+print("--------------------")
