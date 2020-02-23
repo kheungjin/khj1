@@ -1,9 +1,31 @@
+sum1 = 0
+for x in range(1, 11, 1):
+    sum1 = sum1 + x
+str = "%s부터 %s까지 합은 %s" % (1, 10, sum1)
+print(str)
 
-# 1부터 10까지의 합계를 구하고
-# 그 합계를 sum에 저장하고 sum 값을 한번만 출력한다.
+sum2 = 0
+for x in range(1, 101, 1):
+    sum2 = sum2 + x
+str = "%s부터 %s까지 합은 %s" % (1, 100, sum2)
+print(str)
 
-# 1부터 100까지의 합계를 구하고
-# 그 합계를 sum2 에 저장하고 sum2 값을 한번만 출력한다.
+sum3 = 0
+for x in range(100, sum2+1, 1):
+    sum3 = sum3 + x
+str = "%s부터 %s까지 합은 %s" % (100, sum2, sum3)
+print(str)
 
-# 100부터 sum2까지의 합계를 구하고
-# 그 합계를 sum3 에 저장하고 sum3 값을 한번만 출력한다.
+#함수 만들기
+def get_sum(xx,yy):
+    sum3 = 0
+    for x in range(xx, yy+1, 1):
+        sum3 = sum3 + x
+    str = "함수출력: %s부터 %s까지 합은 %s" % (xx, yy, sum3)
+    print(str)
+    return sum3
+
+#함수호출
+sum1=get_sum(1,10)
+sum2=get_sum(1,100)
+sum3=get_sum(100,sum2)

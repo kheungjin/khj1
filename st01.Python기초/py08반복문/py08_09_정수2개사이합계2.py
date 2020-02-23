@@ -35,3 +35,16 @@
 # 시작값을 입력하세요.  4
 # 종료값을 입력하세요.  1
 # 1부터 4까지의 합계는 10입니다
+start = int(input("시작 값 :"))
+end = int(input("종료 값 :"))
+sum = 0
+for x in range(start, end+1, 1):
+    sum = sum + x
+print(start,"에서 ", end, "까지의 합은 = ", sum)
+
+start = int(input("시작 값 :"))
+end = int(input("종료 값 :"))
+sum = 0
+for x in range(start, end-1, -1):
+    sum = sum + x
+print(start,"에서 ", end, "까지의 합은 = ", sum)
