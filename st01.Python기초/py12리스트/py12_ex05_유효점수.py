@@ -11,3 +11,27 @@
 # step7. 합계를 구하고 출력한다.
 # step8. 평균을 구하고 출력한다.
 
+
+ll = []
+no = 0
+while no < 3:
+ 심사위원수 = int(input("심사위원의 수를 입력하세요 : "))
+ if 심사위원수 >= 3:
+     break
+    
+h_val = 0
+for i in range(0,심사위원수,1):
+    h_val = int(input("심사위원의 점수을 입력하세요 : "))    
+    ll.append(h_val)
+
+ll.sort()
+print(ll)
+del ll[len(ll)-1]
+del ll[0]
+print("유효점수 : ", end= " ")
+for i in ll:
+    print(i, end=" ")
+print()
+
+print("합계 : ", sum(ll))
+print("평균 : ", round(sum(ll)/len(ll),2))

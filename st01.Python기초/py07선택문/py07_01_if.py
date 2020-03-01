@@ -1,15 +1,32 @@
 
 
-# "grade 가 60보다 크면 합격입니다"
-grade = 65
-if grade >= 60:
+# "grade 가 60보다 크다면 합격입니다"
+grade = 75
+
+if grade > 60:
     print("합격입니다")
 
 print("종료")
-# 입력을 받습니다.
 
-# 양수 조건
 
-# 음수 조건
+# grade 값을 표준 입력을 받습니다.
 
-# 0 조건
+grade = input("점수를 입력하시오 >>")
+grade = int( grade ) 
+
+if grade>65:
+    print("합격입니다")
+
+print("종료")
+
+
+
+# # 출력 예시1
+# 합격입니다
+# 종료
+
+
+
+# 출력 예시2
+# 종료
+

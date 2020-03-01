@@ -1,15 +1,12 @@
-import math
+value = round(1.2345)  # 반올림
+print("round(1.2345)", value)  # 20
 
-value = abs(-3)
-print("abs ",value)
+value = round(1.9876)  # 반올림
+print("round(1.9876)", value)  # 2
 
-value = round(1.2345)
-print("round ",value)
-value = round(1.9876)
-print("round ",value)
+value = max(10, 20)  # 최대값 구하기
+print("max()", value)  # 20
 
-value = max(10,20)
-print("max() ", value)
+value = min(10, 20, 30, 40, 50)  # 최소값 구하기
+print("min()", value)  # 10
 
-value = min(10,20,30,40,50)
-print("min() ", value)

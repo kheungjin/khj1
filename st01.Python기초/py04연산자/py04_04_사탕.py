@@ -1,7 +1,10 @@
-#현재돈 5000원  사탕하나 120원
-사탕 = 5000 // 120
-나머지돈 = 5000 % 120
+myMoney = 5000
+candyPrice = 120
+
 # 최대한 살 수 있는 사탕 수
-print(사탕,"개")
+numCandies = myMoney//candyPrice
+print(numCandies)
+
 # 최대한 사탕을 구입하고 남은 돈
-print(나머지돈,"원")
+change = myMoney % candyPrice
+print(change)

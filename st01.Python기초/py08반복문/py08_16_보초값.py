@@ -1,13 +1,32 @@
-print("종료하려면 음수를 입력하세요")
+
+# while 문을 사용하여 합계를 구하시오
+# 무한 반복과 반복문(루프) 탈출을 결합한 예제
+# 페이지 134 참고
+
+# 무한 반복문은 조건식을 True 로 하면 된다.
+# 루프 탈출은 break 를 사용하면 된다.
 sum = 0
-cnt = 0
-while True:
-    grade = input("성적을 입력 하세요")
-    grade = int(grade)
-    if grade < 0:
+count = 0
+print("종료하려면 음수를 입력하시오")
+while True: # 무한 루프
+    입력값 = input("성적을 입력하시오: ")
+    # 정수로 변환
+    입력값  = int( 입력값 )
+
+    # 입력값이 음수이면 반복문을 종료.  break
+    if 입력값 < 0 :
         break
-    cnt = cnt + 1
-    sum = sum + grade
-    avr = sum / cnt
-str ="%s개의 평균 성적은 %s입니다" % (cnt, avr)
-print(str)
+    
+    count = count + 1 # 입력횟수
+
+    # 합계를 구한다.
+    sum = sum + 입력값
+
+# 평균값을 계산한다.
+평균값 = sum / count # 실수
+
+# 평균값을 출력한다.
+str = "성적의 평균은 %s 입니다." % 평균값
+print( str )
+
+

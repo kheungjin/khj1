@@ -10,3 +10,11 @@
 ############################
 # 3차원 리스트를 생성한다.
 ############################
+ll = []
+h_val = 0
+while h_val >= 0:
+    h_val = int(input("정수를 입력하세요 : "))    
+    if h_val < 0:
+        break
+    ll.append(h_val)
+print("평균 : ", sum(ll)/len(ll))

@@ -1,27 +1,16 @@
-x = 3
-y = 4
+# 불린 타입
+print(not True)
+print(not False)
 
-r = ((x ==3) and (y ==3))
-print("( x == 3) && (y !=3) :", r)
+# and 연산자
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+print()
 
-r = ((x ==3) and (y !=3))
-print("( x == 3) && (y !=3) :", r)
-
-r = ((x ==3) and (y ==3))
-print("( x == 3) :: (y ==3) :", r)
-
-r = ((x ==3) and (y ==4))
-print("( x == 3) :: (y ==4) :", r)
-
-r = ((x !=3) or (y ==4))
-print("( x != 3) :: (y ==4) :", r)
-
-r = ((x !=3) or (y !=4))
-print("( x != 3) :: (y !=4) :", r)
-
-x = 3
-y = 4
-print((x == y) and (x != y))    # False
-print((x > y) and (x < y))      # False
-print((x >= y) and (x <= y))
-print((x == y) and (x != y) or (x <y))
+# or 연산자
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)

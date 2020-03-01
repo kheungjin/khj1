@@ -11,12 +11,16 @@
 # c. 정수리스트를 오름차순 정렬하시오
 # d. 정수리스트에서 최대값을 찾는다.
 temp3 = "74 874 9883 73 9 73646 774"
-array1 = temp3.strip().split(" ")
-print(array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
+def main():
+    array1 = temp3.strip().split(" ")
+    print(array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
 
-array2 = []
-for n in array1:
-    n = int(n)
-    array2.append(n)
+    array2 = []
+    for n in array1:
+        n = int(n)
+        array2.append(n)
 
-print(array2)  # [74, 874, 9883, 73, 9, 73646, 774]
+    print(array2)  # [74, 874, 9883, 73, 9, 73646, 774]
+
+if __name__ == "__main__":
+    main()

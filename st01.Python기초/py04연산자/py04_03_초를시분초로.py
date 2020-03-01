@@ -2,4 +2,4 @@
 sec = 1000
 min = 1000 // 60
 remainder = 1000 % 60
-print(min,"분", remainder,"초 입니다")
+print(min, remainder)
