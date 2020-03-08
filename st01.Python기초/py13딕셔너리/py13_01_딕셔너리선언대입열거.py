@@ -1,4 +1,4 @@
-# 딕셔너리의 CRUD3S
+# 딕셔너리의 CRUD2S
 # C: create.
 # R: read
 # U: update
@@ -8,7 +8,12 @@
 # S: shuffle
 
 # 딕셔너리 선언하기
-
+dictionary = {
+    "name":"7D 건조망고",
+    "type":"당절임",
+    "ingredient": ["망고", "설탕", "소금", "치자"],
+    "origin": "필리핀",
+}
 # 요소 추가 전에 내용을 출력해봅니다.
 
 # 딕셔너리 추가
