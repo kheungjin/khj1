@@ -16,3 +16,29 @@
 
 
 # 코딩 하기 
+class FourCal(object):
+    def __init__(self, num1=0, num2=0):
+        self.__num1 = num1
+        self.__num2 = num2
+
+    def Add(self):
+        result = self.__num1 + self.__num2
+        return result
+
+    def Minus(self):
+        result = self.__num1 - self.__num2
+        return result
+
+    def Mul(self):
+        result = self.__num1 * self.__num2
+        return result
+
+    def Div(self):
+        result = self.__num1 / self.__num2
+        return result
+
+    def getNum1(self):
+        return self.__num1
+        
+    def setNum1(self, num):
+        self.__num1 = num

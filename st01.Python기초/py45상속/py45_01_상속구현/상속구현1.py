@@ -10,4 +10,18 @@
 #    main()
 
 
-# 코딩 하기 
+# 코딩 하기
+class Parent():
+    def __init__(self):
+        self.__value = "부모변수" 
+    def test(self):
+        print("parent 클래스의 test()매서드입니다.")
+    def getValue(self):
+        return self.__value
+
+class Child(Parent):
+    def __init__(self):
+        pass 
+
+child = Child()
+child.test
